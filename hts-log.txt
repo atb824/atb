@@ -1,0 +1,19 @@
+HTTrack3.49-2 launched on Fri, 25 Jun 2021 13:38:49 at http://advandes.com/
+(httrack http://advandes.com/ -O /home/a/Desktop/Advandes )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+13:48:25	Warning: 	Unexpected socket error during pre-loop
+13:48:28	Warning: 	Unexpected socket error during pre-loop
+14:18:22	Warning: 	Retry after error -4 (Receive Error) at link advandes.com/change_service/prev/prototyping (from advandes.com/service/prototyping)
+14:18:23	Warning: 	Retry after error -4 (Receive Error) at link advandes.com/change_service/next/prototyping (from advandes.com/service/prototyping)
+14:21:10	Warning: 	Found for advandes.com/change_service/prev/prototyping
+14:21:10	Warning: 	File has moved from advandes.com/change_service/prev/prototyping to http://advandes.com/service/engineering
+14:21:10	Warning: 	Found for advandes.com/change_service/next/prototyping
+14:21:10	Warning: 	File has moved from advandes.com/change_service/next/prototyping to http://advandes.com/service/research
+
+HTTrack Website Copier/3.49-2 mirror complete in 42 minutes 36 seconds : 157 links scanned, 152 files written (53911509 bytes overall) [53421468 bytes received at 20900 bytes/sec], 1039323 bytes transferred using HTTP compression in 201 files, ratio 33%
+(No errors, 8 warnings, 0 messages)

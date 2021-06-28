@@ -1,1092 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
 <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Advandes - Home</title>
-      <meta name="keywords" content="" />
-      <meta name="description" content="" />
-      <meta name="robots" content="index,follow" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
+	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
+	<title>Local index - HTTrack Website Copier</title>
+  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<style type="text/css">
+	<!--
 
-<link rel="icon" type="image/png"  href="public/frontend/images/favicon.png">
-<link rel="stylesheet" href="../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="public/frontend/css/bootstrap.min.css">
-<link href="public/frontend/css/style.css" rel="stylesheet"/>
-<link rel="stylesheet" href="public/frontend/css/hover.min.css">
-<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
-<script src="public/frontend/js/jquery.min.js"></script>
+body {
+	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
+	background: #77b;
+}
+body, td {
+	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	}
 
-<script src="public/frontend/js/bootstrap.min.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3141958-3"></script>
-  <script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		  gtag('config', 'UA-3141958-3');
-  </script>
-<script src="../cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+#subTitle {
+	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
+	}
 
-<script>(function(w, d) { w.CollectId = "606ef51d5d8493507d5828c9"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+#siteNavigation a, #siteNavigation .current {
+	font-weight: bold;  color: #448;
+	}
+#siteNavigation a:link    { text-decoration: none; }
+#siteNavigation a:visited { text-decoration: none; }
+
+#siteNavigation .current { background-color: #ccd; }
+
+#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
+#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+
+
+a:link    { text-decoration: underline;  color: #00f; }
+a:visited { text-decoration: underline;  color: #000; }
+a:hover   { text-decoration: underline;  color: #c00; }
+a:active  { text-decoration: underline; }
+
+#pageContent {
+	clear: both;
+	border-bottom: 6px solid #000;
+	padding: 10px;  padding-top: 20px;
+	line-height: 1.65em;
+	background-image: url(backblue.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	}
+
+#pageContent, #siteNavigation {
+	background-color: #ccd;
+	}
+
+
+.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
+.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
+
+hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
+
+h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
+h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
+h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
+h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
+
+.blak { background-color: #000; }
+.hide { display: none; }
+.tableWidth { min-width: 400px; }
+
+.tblRegular       { border-collapse: collapse; }
+.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
+.tblHeaderColor, .tblHeaderColor td { background: #99c; }
+.tblNoBorder td   { border: 0; }
+
+
+// -->
+</style>
+
 </head>
 
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
+	<tr>
+	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
+	</tr>
+</table>
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
+<tr class="blak">
+<td>
+	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
+	<tr>
+	<td colspan="6"> 
+		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
+		<tr> 
+		<td id="pageContent"> 
+<!-- ==================== End prologue ==================== -->
 
-<style type="text/css">
-   .after_ban{
-      text-align: center !important;
-   }
-   .home_new_product{
-     line-height: 38px;
-   }
-   @media(min-width: 992px ) and (max-width: 1180px){
-   }
-   @media(min-width: 768px ) and (max-width: 991px){
-   }
-   @media(min-width: 480px ) and (max-width: 767px){
-   .testi_box{
-   margin-bottom: 10px !important;
-   }
-   .projects_responsive{
-   margin-bottom: 10px !important;
-   }
-   }
-   @media(max-width: 479px ){
-   .testi_box{
-   margin-bottom: 10px !important;
-   }
-   .main_home_slider{
-      margin-top: 50px!important;
-   }
-   .projects_responsive{
-   margin-bottom: 10px !important;
-   }
-   }
-   /*media */
-   .services_icons{
-   width: 100%;
-   /*height: 150px;*/
-   background-color: #ebebeb;
-   padding: 10px;
-   border-radius: 10px;
-   }
-   .serices_icon_img{
-   width: 100%;
-   }
-   .hm_services_name{
-       font-size: 13px;
-    font-weight: 700;
-    color: #484646;
-   }
-   .hm_box_res_margin{
-   margin-bottom: 10px;
-   }
-   @media (max-width: 479px){
-   .hm_box_res_margin {
-   margin-bottom: 23px !important;
-   }
-      .home_slider{
-          height: auto !important;
-      }
-      .new_project_boxs{
-         /*padding: 35px !important;*/
-         padding-left: 0px !important;
-         padding-right: 0px !important;
-      }
-      .hm_services_name{
-         font-size: 20px;
-      }
-      .serices_icon_img {
-    width: 60% !important;
-}
-
-.services_icons {
-    height: 260px !important;
-    background-color: #ebebeb;
-    padding: 10px !important;
-    border-radius: 20px !important;
- }
-
-   }
-
-</style>
-<style type="text/css">
-   .testimonial{
-   margin: 0 4px 40px;
-   }
-   .testimonial .testimonial-content{
-   padding: 35px 25px 35px 50px;
-   margin-bottom: 35px;
-   background: #fff;
-   position: relative;
-   }
-   .testimonial .testimonial-content:before{
-   content: "";
-   position: absolute;
-   bottom: -30px;
-   left: 0;
-   border-top: 15px solid #718076;
-   border-left: 15px solid transparent;
-   border-bottom: 15px solid transparent;
-   }
-   .testimonial .testimonial-content:after{
-   content: "";
-   position: absolute;
-   bottom: -30px;
-   right: 0;
-   border-top: 15px solid #718076;
-   border-right: 15px solid transparent;
-   border-bottom: 15px solid transparent;
-   }
-   .testimonial-content .testimonial-icon{
-   width: 50px;
-   height: 45px;
-   background: black;
-   text-align: center;
-   font-size: 22px;
-   color: #fff;
-   line-height: 42px;
-   position: absolute;
-   top: 37px;
-   left: -19px;
-   }
-   .testimonial-content .testimonial-icon:before{
-   content: "";
-   border-bottom: 16px solid #05A739;
-   border-left: 18px solid transparent;
-   position: absolute;
-   top: -16px;
-   left: 1px;
-   }
-   .testimonial .description{
-   font-size: 15px;
-   font-style: italic;
-   color: #8a8a8a;
-   line-height: 23px;
-   margin: 0;
-   }
-   .testimonial .title{
-   display: block;
-   font-size: 18px;
-   font-weight: 700;
-   color: #525252;
-   text-transform: capitalize;
-   letter-spacing: 1px;
-   margin: 0 0 5px 0;
-   }
-   .testimonial .post{
-   display: block;
-   font-size: 14px;
-   color: black;
-   }
-   .owl-theme .owl-controls{
-   margin-top: 20px;
-   }
-   .owl-theme .owl-controls .owl-page span{
-   background: #ccc;
-   opacity: 1;
-   transition: all 0.4s ease 0s;
-   width: 8px;
-   height: 8px;
-   }
-   .owl-theme .owl-controls .owl-page.active span,
-   .owl-theme .owl-controls.clickable .owl-page:hover span{
-   background: black;
-   width: 8px;
-   height: 8px;
-   }
-   .slider_arrows{
-   visibility: hidden;
-   }
-   /*HOVER*/
-   .img-hover  {
-   -webkit-transition: all .3s ease; /* Safari and Chrome */
-   -moz-transition: all .3s ease; /* Firefox */
-   -o-transition: all .3s ease; /* IE 9 */
-   -ms-transition: all .3s ease; /* Opera */
-   transition: all .3s ease;
-   position:relative;
-   }
-   .img-hover :hover {
-   -webkit-backface-visibility: hidden;
-   backface-visibility: hidden;
-   -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
-   -moz-transform:scale(1.20); /* Firefox */
-   -ms-transform:scale(1.20); /* IE 9 */
-   -o-transform:translatZ(0) scale(1.20); /* Opera */
-   transform:translatZ(0) scale(1.20);
-   }
-   /*.img-hover:hover:after {
-   content:"";
-   position:absolute;
-   top:0;
-   left:0;
-   z-index:2;
-   width:30px;
-   height:30px;
-   border:1px solid #000;
-   }*/
-   .grayscale {
-   -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
-   -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
-   filter: brightness(1.10) grayscale(100%);
-   }
-/*.bottom-left {
-  position: absolute;
- bottom: 85px;
-    left: 259px;
-}*/
-.home_slider_text{
-   color: white;
-  font-size: 35px;
-}
-.home_slider_text_sub{
-   color: white;
-  font-size: 20px;
-}
-/*carousel*/
-@media(max-width: 479px ){
-  .home_slider_text{
-   color: white;
-  font-size: 16px !important;
-}
-.home_slider_text_sub{
-   color: white;
-  font-size: 11px !important;
-}
-.carousel-caption {
-    position: absolute;
-    /* right: 15%; */
-    bottom: 18px;
-    left: 10%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    /* text-align: center; */
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-}
-}
-.carousel-indicators li, .carousel-indicators li.active {
-  margin: 0px 4px !important;
-}
-/*carousel*/
-.main-text {
-    position: absolute;
-    top: 62%;
-    /* width: 96.66666666666666%; */
-    color: #FFF;
-    left: 23%;
-}
-.style_prevu_kit_home:hover
-{
-    z-index: 2;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.5);
-    -ms-transition: all 300ms ease-in;
-    -ms-transform: scale(1.5);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
-    transition: all 400ms ease-in;
-    transform: scale(1.2);
-}
-/* .loader {
-         width: 100%;
-         height: 100%;
-         position: absolute;
-         top: 0; left: 0;
-         background: #fff url(https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif) no-repeat center center;
-         }*/
-         .projects_see_more{
-              color: black;
-    font-family: futura;
-    font-weight: 700;
-    font-size: 17px;
-    text-decoration: underline;
-         }
-</style>
-<script>(function(w, d) { w.CollectId = "60d58749abdbe746a4243a49"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
-</head>
+	<meta name="generator" content="HTTrack Website Copier/3.x">
+	<TITLE>Local index - HTTrack</TITLE>
+</HEAD>
+<BODY>
+<H1 ALIGN=Center>Index of locally available sites:</H1>
+	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
+		<TR>
+			<TD BACKGROUND="fade.gif">
+				&middot;
+					<A HREF="advandes.com/index.html">
+						Advandes - Home
+					</A>		
+			</TD>
+		</TR>
+	</TABLE>
+	<BR>
+	<BR>
+	<BR>
+  	<H6 ALIGN="RIGHT">
+	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
+	</H6>
+	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<!-- Thanks for using HTTrack Website Copier! -->
+	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=advandes.com/index.html">
 
 
+<!-- ==================== Start epilogue ==================== -->
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
 
+<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
+	<tr>
+	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
+	</tr>
+</table>
 
-<body>
-
-    <style type="text/css">
-
-@media (max-width: 479px){
-  .moblogo{
-  margin-left: -12px !important;
-  /*margin-left: 300px;*/
-}
-.mobile_view_center{
-  margin-left: 120px !important;
-}
-}
-.navbar-inverse {
-    background-color: #0073CE !important;
-    border-color: #0073CE !important;
-}
-.style_prevu_kit:hover
-{
-    /*box-shadow: 0px 0px 150px #000000;*/
-    z-index: 2;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.5);
-    -ms-transition: all 300ms ease-in;
-    -ms-transform: scale(1.5);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
-    //transform-origin: left;
-    transition: all 400ms ease-in;
-    //transform: scale(0.45);
-    //transform: scale(0.45);
-    transform: scale(0.6) translate(-50px, 0px);
-    //background:  url("public/frontend/images/name.jpg");
-}
-
-.opp
-{
-    /*box-shadow: 0px 0px 150px #000000;*/
-    opacity: 0.0;
-}
-
-.opp:hover
-{
-    /*box-shadow: 0px 0px 150px #000000;*/
-
-    opacity: 1.0;
-}
-
-ul li a:hover, ul li a:focus {
- font-family: MUSEOSANSCYRL;
-}
-/*.style_prevu_kit:not(.nohover):hover {
-    border: 1px solid red;
-}*/
-
-</style>
-
-
-<nav class="navbar navbar-inverse navbar-fixed-top" style="opacity: 0.9;">
-  <div class="container">
-    <div class="col-md-12">
-    <div class="row">
-    <div class="navbar-header">
-      <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>-->
-      <a class="navbar-brand " href="index.html"><img src="public/frontend/images/logo.png" class="moblogo style_prevu_kit" style="width: 80px;margin-left: 20px;margin-left: 100px;"></a>
-      <!--  <img src="public/frontend/images/name.jpg" class="opp" style="width: 100px;margin-left: -63px;margin-top: 53px"></a>-->
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-
-      <ul class="nav navbar-nav navbar_middle" style="font-family: 'Open Sans' sans-ser if; font-size: 20px;">
-        <li>
-          <a href="about.html" style="width: 150px;" class="">About Us</a>
-        </li>
-        <li>
-          <a href="work.html" style="width: 150px;" class="">Our Work</a>
-        </li>
-        <li style="margin-right: 70px;">
-          <a href="contact.html" style="width: 150px;" class="">Contact Us</a>
-        </li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right head_social_mob" style="margin-left: 90px; display: inline;">
-        <li class="icons_mob" style="float: left;font-size: 17px;"><a href="https://www.linkedin.com/company/advandes-design-engineering-services/" target="_blank"><i class="fa fa-linkedin" style="color: white;"></i></a></li>
-        <li class="icons_mob" style="float: left;font-size: 17px;"><a href="https://www.instagram.com/advandes_design_engineering/?hl=en" target="_blank" style="color: white;"><i class="fa fa-instagram"></i></a></li>
-        <li class="icons_mob" style="float: left;font-size: 17px;"><a href="http://twitter.com/advandes1" target="_blank" style="color: white;"><i class="fa fa-twitter"></i></a></li>
-        <li class="icons_mob" style="float: left;font-size: 17px;"><a href="https://www.facebook.com/advandes/" target="_blank"><i class="fa fa-facebook" style="color: white;"></i></a></li>
-      </ul>
-
-    </div>
-</div>
-</div>
-  </div>
-</nav>
-
-
-<script type="text/javascript">
-$(function() {
-  $(document).click(function (event) {
-    $('.navbar-collapse').collapse('hide');
-  });
-});
-</script>
-
-
-        <div class="main_home_slider">
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-												<li data-target="#myCarousel" data-slide-to="1" class="active "></li>
-															<li data-target="#myCarousel" data-slide-to="2" class=""></li>
-															<li data-target="#myCarousel" data-slide-to="3" class=""></li>
-											</ol>
-		<!-- Wrapper for slides -->
-		<!--<div class="carousel-inner home_slider">
-
-						<div class="item active">
-				<img class="home_slider" src="public/images/slider_images/1579087415.Repeat%20Grid%201.png" style="width:100%;max-height: 80%;">
-			</div>
-
-
-						<div class="item">
-				<img class="home_slider" src="public/images/slider_images/1579087396.Group%20592.png" style="width:100%;max-height: 80%;">
-			</div>
-
-
-						<div class="item">
-				<img class="home_slider" src="public/images/slider_images/1580728879.Group%20605.png" style="width:100%;max-height: 80%;">
-			</div>
-
-
-    </div>-->
-
-
-        <div class = "img-360">
-            <iframe width ="1520px" height="720px" frameborder="0" src="https://momento360.com/e/u/f8261fa4bcb94478bae97288699cb946?utm_campaign=embed&utm_source=other&heading=-135.1&pitch=4.96&field-of-view=35&size=medium"</iframe>
-        </div>
-
-		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-	    <span class="glyphicon glyphicon-chevron-left slider_arrows"></span>
-	    <span class="sr-only">Previous</span>
-	    </a>
-	    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-	    <span class="glyphicon glyphicon-chevron-right slider_arrows"></span>
-	    <span class="sr-only">Next</span>
-	    </a>
-	</div>
-</div>
-<!-- <div class="main_home_slider">
-   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-         <li data-target="#myCarousel" data-slide-to="0" class="active "></li>
-         <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-         <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-      </ol>
-      <div class="carousel-inner home_slider" >
-         <div class="item active">
-            <img class="home_slider" src="http://advandes.com/public/frontend/images/home/new/Component 42 – 1.png" style="width:100%;">
-         </div>
-         <div class="item ">
-            <img class="home_slider" src="http://advandes.com/public/frontend/images/home/new/Group 592.png" style="width:100%;">
-         </div>
-         <div class="item">
-            <img class="home_slider" src="http://advandes.com/public/frontend/images/home/new/Repeat Grid 1.png" style="width:100%;">
-         </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left slider_arrows"></span>
-      <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right slider_arrows"></span>
-      <span class="sr-only">Next</span>
-      </a>
-   </div>
-</div> -->
-<br><br>
-<div id="services_home" name="services_home">
-<div class="container">
-   <div class="row">
-      <div class="col-md-10 col-md-offset-1 ad_home_cont_first after_ban" style="font-family: futura;">
-         <p class="ad_home_cont_first after_ban"><p align="center">Advandes is an innovation-led multidisciplinary design and engineering company with a remarkable experience in delivering end to end solutions in New Product Development. We create disruptive solutions for the ever-changing market that help businesses grow, adapt and face challenges.Our process of co-innovation and design thinking, our services assure impactful results to our clients.</p>
-
-<p align="center">We offer services in the following domains Automotive, equipment design, medical and consumer durables.</p>
-         </p>
-      </div>
-   </div>
-</div>
-<br><br>
-<div class="container">
-   <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-         <center>
-            <h2 class="home_all_titles home_new_product">Services</h2>
-         </center>
-         <br><br><br>
-         <div class="row">
-													<div class="col-md-3 col-sm-6 col-xs-6 hm_box_res_margin">
-		               	<a href="service/research.html" style="text-decoration: none;">
-		                  	<div class="style_prevu_kit_home new_project_boxs">
-		                     	<img src="public/images/service_images/1580725907.Component%203%20%e2%80%93%205.png" style="width: 100%;">
-		                  	</div>
-		               	</a>
-		            </div>
-									<div class="col-md-3 col-sm-6 col-xs-6 hm_box_res_margin">
-		               	<a href="service/design.html" style="text-decoration: none;">
-		                  	<div class="style_prevu_kit_home new_project_boxs">
-		                     	<img src="public/images/service_images/1580726131.Component%204%20%e2%80%93%205.png" style="width: 100%;">
-		                  	</div>
-		               	</a>
-		            </div>
-									<div class="col-md-3 col-sm-6 col-xs-6 hm_box_res_margin">
-		               	<a href="service/engineering.html" style="text-decoration: none;">
-		                  	<div class="style_prevu_kit_home new_project_boxs">
-		                     	<img src="public/images/service_images/1580726458.Component%205%20%e2%80%93%205.png" style="width: 100%;">
-		                  	</div>
-		               	</a>
-		            </div>
-									<div class="col-md-3 col-sm-6 col-xs-6 hm_box_res_margin">
-		               	<a href="service/prototyping.html" style="text-decoration: none;">
-		                  	<div class="style_prevu_kit_home new_project_boxs">
-		                     	<img src="public/images/service_images/1580726671.Component%206%20%e2%80%93%205.png" style="width: 100%;">
-		                  	</div>
-		               	</a>
-		            </div>
-							</div>
-			<!-- Static Data -->
-	         <!-- <div class="row">
-	            <div class="col-md-3 col-sm-6 col-xs-6 hm_box_res_margin">
-	               <a href="http://advandes.com/research" style="text-decoration: none;">
-	                  <div class="style_prevu_kit_home new_project_boxs">
-	                     <img src="http://advandes.com/public/frontend/images/home/new/research.png" style="width: 100%;">
-	                  </div>
-	               </a>
-	            </div>
-	         </div> -->
-         <br><br><br>
-      </div>
-   </div>
-</div>
-</div>
-<br><br>
-<div class="container">
-   <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-         <center>
-            <h2 class="home_all_titles">Our Work</h2>
-         </center>
-         <br><br>
-        	        				        	<div class="row mobile_project_row" style="margin-bottom: 10px;">
-         		            <div class="col-md-4" style="margin-bottom: 10px;">
-	               <div class="content content_work_home projects_responsive">
-	                  <div class="content-overlay"></div>
-	                  <img class="content-image" src="public/images/projects/project1578479428/1578995878.banner%20image%20aq%20soil%20comp%20GREEN.png">
-	                  <a href="works/soil_compactor.html">
-	                     <div class="content-details fadeIn-top">
-	                        <h3 style="font-family: futura;">Soil Compactor</h3><hr class="projects_titl_hr">
-	                        <span class="work_desk"> <p>Designed and engineered by Advandes, the Aquarius soil compactor draws inspiration from the elytra ( the hard and sturdy fore-wings ) of a beetle. The strength and survivability..</span>
-                          <p style="margin-top: 21px;">Industrial Equipment Design</p>
-	                     </div>
-	                  </a>
-	               </div>
-	         	</div>
-	         		         		        	            <div class="col-md-4" style="margin-bottom: 10px;">
-	               <div class="content content_work_home projects_responsive">
-	                  <div class="content-overlay"></div>
-	                  <img class="content-image" src="public/images/projects/project1578488877/1579173332.thermocutter%20final.101.png">
-	                  <a href="works/thermocutter.html">
-	                     <div class="content-details fadeIn-top">
-	                        <h3 style="font-family: futura;">Thermocutter</h3><hr class="projects_titl_hr">
-	                        <span class="work_desk"> <p>A thermocutter caters to a niche market in the northern European countries where Styrofoam is extensively used in floor construction as a heat insulator. This cutter is used to ..</span>
-                          <p style="margin-top: 21px;">Industrial Equipment Design</p>
-	                     </div>
-	                  </a>
-	               </div>
-	         	</div>
-	         		         		        	            <div class="col-md-4" style="margin-bottom: 10px;">
-	               <div class="content content_work_home projects_responsive">
-	                  <div class="content-overlay"></div>
-	                  <img class="content-image" src="public/images/projects/project1578890757/1578996540.microlit%20scitus%20and%20beatus%20arrangement%202.224.png">
-	                  <a href="works/bottle_top_dispenser.html">
-	                     <div class="content-details fadeIn-top">
-	                        <h3 style="font-family: futura;">Bottle Top Dispenser</h3><hr class="projects_titl_hr">
-	                        <span class="work_desk"> <p>A Bottle Top Dispenser is a liquid dispensing apparatus, mostly used in scientific laboratories where high precision measurement is required. With Microlit, Advandes designed a ..</span>
-                          <p style="margin-top: 21px;">Scientific Equipment Design</p>
-	                     </div>
-	                  </a>
-	               </div>
-	         	</div>
-	         		         		         		</div><div class="row" style="margin-bottom: 10px;">
-	         		        	            <div class="col-md-4" style="margin-bottom: 10px;">
-	               <div class="content content_work_home projects_responsive">
-	                  <div class="content-overlay"></div>
-	                  <img class="content-image" src="public/images/projects/project1578980220/1578996822.Picture2.png">
-	                  <a href="works/deccan_auto_bus.html">
-	                     <div class="content-details fadeIn-top">
-	                        <h3 style="font-family: futura;">Deccan Auto Bus</h3><hr class="projects_titl_hr">
-	                        <span class="work_desk"> <p>Deccan Auto, with an aim of improving the travel experience in intercity buses, collaborated with Advandes to design and develop three variants of a luxury bus - 8 meter, 12 met..</span>
-                          <p style="margin-top: 21px;">Automotive Design</p>
-	                     </div>
-	                  </a>
-	               </div>
-	         	</div>
-	         		         		        	            <div class="col-md-4" style="margin-bottom: 10px;">
-	               <div class="content content_work_home projects_responsive">
-	                  <div class="content-overlay"></div>
-	                  <img class="content-image" src="public/images/projects/project1579084662/1579084662.Picture1.png">
-	                  <a href="works/captain_tractor.html">
-	                     <div class="content-details fadeIn-top">
-	                        <h3 style="font-family: futura;">Captain Tractor</h3><hr class="projects_titl_hr">
-	                        <span class="work_desk"> <p>Captain Tractors is one of the leading agricultural equipments company in India. With a mission of revolutionizing ways of farming through various solutions in farm mechanizatio..</span>
-                          <p style="margin-top: 21px;">Agricultural Equipment Design</p>
-	                     </div>
-	                  </a>
-	               </div>
-	         	</div>
-	         		         		        	            <div class="col-md-4" style="margin-bottom: 10px;">
-	               <div class="content content_work_home projects_responsive">
-	                  <div class="content-overlay"></div>
-	                  <img class="content-image" src="public/images/projects/project1579084991/1579084991.Render%20GC%20white%20bckground.140.png">
-	                  <a href="works/evano_electric_golf_cart.html">
-	                     <div class="content-details fadeIn-top">
-	                        <h3 style="font-family: futura;">Evano - Electric Golf Cart</h3><hr class="projects_titl_hr">
-	                        <span class="work_desk"> <p>Apart from being used during golfing, electric golf carts have a great utility in applications like in-campus commute, sightseeing (tourism) and public service. Autonomous and s..</span>
-                          <p style="margin-top: 21px;">Smart Mobility - Automotive &amp; System Design</p>
-	                     </div>
-	                  </a>
-	               </div>
-	         	</div>
-	         		         		         		</div><div class="row" style="margin-bottom: 10px;">
-	         		           </div>
-   <br><br>
-   <div class="row" style="margin-bottom: 70px;">
-  <center><a href="work.html"><p class="projects_see_more">See More</p></a></center>
-</div>
-</div>
-<br><br><br>
-<!-- projects end --><br><br>
-<div class="container">
-   <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-         <center>
-            <h2 class="home_all_titles">What our clients have to say about us</h2>
-         </center>
-         <br><br>
-         <div id="testimonial-slider" class="owl-carousel">
-         		            <div class="testimonial">
-	               	<div class="testi_box">
-						<br>
-						<p class="testimonial_msg" style="height: 190px;">"Frugal engineering to bring the product development &amp; product costs down is notable in projects executed for our company by Advandes team"</p>
-						<br>
-						<p class="testimonial_name">Mr. Dinesh Ganeshwade <br>MD Shrikrishna Agro Equipment</p>
-						<br>
-	               	</div>
-	            </div>
-            	            <div class="testimonial">
-	               	<div class="testi_box">
-						<br>
-						<p class="testimonial_msg" style="height: 190px;">"Excellent industrial design capabilities combined with advanced engineering solutions makes Advandes reliable partner in product development"</p>
-						<br>
-						<p class="testimonial_name">Mr. Manish D. <br>MD LGD composites</p>
-						<br>
-	               	</div>
-	            </div>
-            	            <div class="testimonial">
-	               	<div class="testi_box">
-						<br>
-						<p class="testimonial_msg" style="height: 190px;">"Advandes team&#039;s special ability to conceptualize innovative ideas and deliver practical solutions has helped our company to build world class products in record time"</p>
-						<br>
-						<p class="testimonial_name">Mr. Nelvin Varghese <br>MD Suvarna Fibrotech</p>
-						<br>
-	               	</div>
-	            </div>
-                       <!--  <div class="testimonial">
-               <div class="testi_box">
-                  <br>
-                  <p class="testimonial_msg">" Lorem ipsum dolor sit amet,consectetur adipiscing eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad "</p>
-                  <br>
-                  <p class="testimonial_name">- Ketaki Kshirsagar</p>
-                  <br>
-               </div>
-            </div> -->
-         </div>
-      </div>
-   </div>
-</div>
-<!-- <div class="social-icons" id="s-icons">
-    <ul class="navbar-nav" style="list-style-type: none;">
-        <li><a href="#" class="btn btn-primary btn-social "><i class="fa fa-facebook fa-2x social_icon_" style="margin-top: -2px;font-size: 24px;"></i></a></li>
-        <li><a href="#" class="btn btn-primary btn-social "><i class="fa fa-twitter fa-2x social_icon_" style="margin-top: -2px;font-size: 24px;"></i></a></li>
-        <li><a href="#" class="btn btn-primary btn-social "><i class="fa fa-instagram fa-2x social_icon_"style="margin-top: -2px;font-size: 24px;"></i></a></li>
-        <li><a href="#" class="btn btn-primary btn-social "><i class="fa fa-linkedin fa-2x social_icon_"style="margin-top: -2px;font-size: 24px;"></i></a></li>
-    </ul>
-<button class="btn btn-primary btn-social socil_margn" id="btn-share" data-toggle="tooltip" data-placement="left" title="Tooltip on left" style="    margin-left: 40px;">
-    <i class="fa fa-share-alt fa-2x"></i>
-</button>
-</div> -->
-<!--<br><br>-->
-<center class="bottom-to-top">
-   <a id="back-to-top" href="#" class=" top_scroll btn-lg back-to-top" role="button"  data-placement="left">
-      <img src="public/frontend/images/up-fill-512.png" class="hvr-float-shadow" style="width: 30px;">
-     <!--  <i class="fa fa-chevron-up" aria-hidden="true"  style="    font-size: 16px;
-         color: #696868;"></i> -->
-   </a>
-</center>
-<!--<br><br><br>-->
-
-        </div>
-        <!-- /page content -->
-
-    </div>
-    <!-- /page container -->
-
-    <!-- addon scripts included. page specific.  -->
-    <!-- <script>
-$(document).ready(function(){
-     $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        // scroll body to 0px on click
-        $('#back-to-top').click(function () {
-            $('#back-to-top').tooltip('hide');
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-
-        $('#back-to-top').tooltip('show');
-
-});
-</script> -->
-<script type="text/javascript">
-   $(document).ready(function() {
-   	$('#media').carousel({
-   		pause: true,
-   		interval: false,
-   	});
-   });
-</script>
-<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
-<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-<script>
-   $(document).ready(function(){
-   	$("#testimonial-slider").owlCarousel({
-   		items:3,
-   		itemsDesktop:[1000,3],
-   		itemsDesktopSmall:[980,2],
-   		itemsTablet:[768,2],
-   		itemsMobile:[650,1],
-   		pagination:true,
-   		navigation:false,
-   		slideSpeed:1000,
-   		autoPlay:true
-   	});
-   });
-</script>
-
-<!-- <script type="text/javascript">
-   $(document).ready(function(){
-  $(".projects_more").slice(0, 6).show();
-  $("#loadMore").on("click", function(e){
-    e.preventDefault();
-    $(".projects_more:hidden").slice(0, 6).slideDown();
-    if($(".projects_more:hidden").length == 0) {
-      $("#loadMore").text("No Content").addClass("noContent");
-    }
-  });
-
-})
-</script> -->
-<!-- <script type="text/javascript">
-   $(document).ready(function(){
-    $('#s-icons').click(function() {
-        $('.navbar-nav').toggleClass("show");
-    });
-});
-</script> -->
-
-    <!-- session message  -->
-        <script src="../cdn.jsdelivr.net/clipboard.js/1.5.10/clipboard.min.js"></script>
-<style type="text/css">
-   /*SOCIAL ICON*/
-   .social-icons { position: fixed; right: 20px; bottom: 5em; }
-   .btn-social { cursor: pointer; width: 30px; height: 30px; border-radius: 50px; }
-   .social-icons .navbar-navmob li { position: absolute; bottom: 0; z-index: -1; transition: .2s all; }
-   .social-icons .navbar-navmob.show li:nth-child(1){bottom: 50px}
-   .social-icons .navbar-navmob.show li:nth-child(2){bottom: 100px}
-   .social-icons .navbar-navmob.show li:nth-child(3){bottom: 150px;}
-   .social-icons .navbar-navmob.show li:nth-child(4){bottom: 200px;}
-   .social-icons .navbar-navmob.show li:nth-child(5){bottom: 250px;}
-   .btn-primary {
-   color: #fff !important;
-   background-color: #39393a !important;
-   border-color: #39393a !important;
-   }
-   .btn-primary:hover {
-   color: #fff !important;
-   background-color: #39393a !important;
-   border-color: #39393a !important;
-   }
-   @media(max-width: 479px ){
-   .socil_margn{
-   margin-left: 25px !important;
-   }
-   .social_icon_{
-   margin-top: 0px !important;
-   }
-   .res_mob_social{
-    margin-left: 0px !important;
-   }
-   .footer_subscrb_input{
-    width: 158px !important;
-   }
-   .mobile_view_footer{
-    margin-left: -122px !important;
-   }
-   }
-   /*SOCIAL ICON*/
-   .contact_content {
-   font-family: Segoe UI;
-   /*color: #171717;*/
-   /*font-size: 15px;*/
-   /*letter-spacing: 1px;*/
-   /*line-height: 28px;*/
-   }
-   @media (min-width: 768px){
-   .navbar-right {
-   float: left!important;
-   margin-right: -15px;
-   }
-   }
-::placeholder {
-  color: white;
-  opacity: 0.8; /* Firefox */
-}
-   /*COPY CURRENT URL*/
-   /*.btn-copy{
-  background-color: #38AFDD;
-  border: transparent;
-  border-bottom: 2px solid #0086B7;
-  border-radius: 2px;
-  padding: 10px;
-  min-width: 100px;
-  color: #fff;
-}
-.btn-copy:hover, .btn-copy:focus{
-  background-color: #48A1C1;
-  border-bottom: 2px solid #38AFDD;
-  transition: all .3s ease-in;
-  -webkit-transition: all .3s ease-in;
-  -moz-transition:all .3s ease-in;
-  -o-transition: all .3s ease-in;
-}*/
-   /*COPY CURRENT URL*/
-/*BACK TO TOP*/
- /* #scroll {
-    position:fixed;
-    right:10px;
-    bottom:10px;
-    cursor:pointer;
-    width:50px;
-    height:50px;
-    background-color:#3498db;
-    text-indent:-9999px;
-    display:none;
-    -webkit-border-radius:60px;
-    -moz-border-radius:60px;
-    border-radius:60px
-}
-#scroll span {
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin-left:-8px;
-    margin-top:-12px;
-    height:0;
-    width:0;
-    border:8px solid transparent;
-    border-bottom-color:#ffffff;
-}
-#scroll:hover {
-    background-color:#e74c3c;
-    opacity:1;filter:"alpha(opacity=100)";
-    -ms-filter:"alpha(opacity=100)";
-}*/
-.back-to-top {
-   cursor: pointer;
-    position: unset;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 24px;
-    width: 49px;
-    display: none;
-}
-/*.top_scroll {
-    color: #000 !important;
-    background-color: #efefef !important;
-    border-color: #efefef !important;
-}*/
-/*BACK TO TOP*/
-@media(min-width: 480px ) and (max-width: 767px){
-.res_lap{
-  margin-left: 25px !important;
-}
-}
-
-
-</style>
-<div class="social-icons" id="s-icons">
-   <ul class="navbar-navmob" style="list-style-type: none;">
-      <li>
-
-<input type="hidden" id="input-url" value="Copied!">
-         <a href="#" ><img src="public/frontend/images/share/copy1.png" class="btn-social btn-copy"></a>
-      </li>
-      <li>
-         <!--<a href="https://www.facebook.com/advandes/" target="_blank">-->
-         <a href="https://www.facebook.com/sharer/sharer.php?u=advandes.com/" target="_blank" rel="noopener">
-             <img src="public/frontend/images/share/fb.png" class="btn-social"></a>
-      </li>
-      <li>
-          <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=advandes.com/" >
-         <!--<a href="https://www.linkedin.com/company/advandes-design-engineering-services/" target="_blank">-->
-             <img src="public/frontend/images/share/link.png" class="btn-social"></a>
-      </li>
-      <li>
-          <a class="twitter-share-button" target="_blank"
-  href="https://twitter.com/intent/tweet?text=Advandes%20http://advandes.com/">
-         <!--<a href="#" target="_blank">-->
-             <img src="public/frontend/images/share/twi.png" class="btn-social"></a>
-
-      </li>
-      <!-- <li> <a href="#" target="_blank"><img src="http://advandes.com/public/frontend/images/share/insta.png" class="btn-social"></a></li> -->
-
-   </ul>
-   <img src="public/frontend/images/share/share.png" class=" btn-primary btn-social socil_margn res_lap" id="btn-share" data-toggle="tooltip" data-placement="left" title="Tooltip on left" style="    margin-left: 25px;">
-   <!-- <button class="btn btn-primary btn-social socil_margn" id="btn-share" data-toggle="tooltip" data-placement="left" title="Tooltip on left" style="    margin-left: 40px;">
-   <i class="fa fa-share-alt fa-2x"></i>
-   </button> -->
-</div>
-<script type="text/javascript">
-   $(document).ready(function(){
-    $('#s-icons').click(function() {
-        $('.navbar-navmob').toggleClass("show");
-    });
-   });
-</script>
-<!-- FOOTER START HERE -->
-<footer class="footer_background footer_align" style="padding-bottom: 30px;">
-   <div class="container">
-      <br><br>
-      <div class="col-md-10 col-md-offset-1 footer_align">
-         <div class="row">
-            <div class="col-md-3">
-               <h5 class="footer_titles"><b>Contact Us</b></h5>
-               <a href="tel:+91 9960503550" style="text-decoration: none;"><p class="footer_main_content">+91 9960503550</p></a>
-               <!--<p class="footer_main_content">+91 9960503550</p>-->
-               <p class="footer_main_content"> <a href="mailto:info@advandes.com" style="    text-decoration: none;color: white;">info@advandes.com</a></p>
-               <!-- <a href="mailto:info@probytes.net"><i class="fa fa-envelope"></i> info@probytes.net</a> -->
-               <p class="footer_main_content"><a href="mailto:hr@advandes.com" style="text-decoration: none;color: white;">hr@advandes.com</a></p>
-            </div>
-            <div class="col-md-3">
-               <h5 class="footer_titles fooot_mob"><b>Address</b></h5>
-               <p class="footer_main_content">R1 Kohinoor Estate,
- Wakdewadi, Shivajinagar,
- Pune, India - 411003</p>
-            </div>
-            <div class="col-md-2">
-               <h5 class="footer_titles fooot_mob"><b>Services</b></h5>
-                                  <a href="service/research.html" style="text-decoration: none;">
-                    <p class="footer_main_content">Research</p>
-                  </a>
-                                  <a href="service/design.html" style="text-decoration: none;">
-                    <p class="footer_main_content">Design</p>
-                  </a>
-                                  <a href="service/engineering.html" style="text-decoration: none;">
-                    <p class="footer_main_content">Engineering</p>
-                  </a>
-                                  <a href="service/prototyping.html" style="text-decoration: none;">
-                    <p class="footer_main_content">Prototyping</p>
-                  </a>
-                            </div>
-            <div class="col-md-4">
-               <h5 class="footer_titles fooot_mob"><b>Newsletter</b></h5>
-               <br>
-               <p class="footer_main_content">Subscribe to our newsletter to get updates on our recent work</p>
-               <form action="http://advandes.com/send_newsletter" method="POST" enctype="multipart/form-data">
-                <input type="hidden" name="_token" value="sItydr5QAIPFGWSQesjXqyVQy7Zm2nb86nM6OX8p">
-               <div class="row">
-                  <div class="col-md-9 col-sm-8 col-xs-8">
-                     <input type="text" name="footer_email" placeholder="Email Address" class="footer_subscrb_input" required>
-                     <div class="col-md-12"><span class="text-danger"></span> </div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-4">
-                     <button class="footer_subbtn mobile_view_footer" style="margin-left: -29px;">SUBSCRIBE</button>
-                  </div>
-               </div>
-             </form>
-            </div>
-         </div>
-         <!-- <div class="row">
-            <div class="col-md-8"></div>
-            <div class="col-md-4">
-                <p style="text-decoration: none;font-size: 13px;color: white;">Download Company Brochure Here</p>
-            </div>
-         </div> -->
-         <div class="row">
-            <div class="col-md-8">
-               <br>
-               <p class="footer_copyright">© Copyright 2020. ADVANDES</p>
-            </div>
-            <div class="col-md-4">
-               <br>
-              <a class="footer_copyright" href="download/Advandes%20corporate%20brochure.pdf">Download Company Brochure Here</p>
-            </div>
-         </div>
-      </div>
-   </div>
-   <br>
-   <!-- <a href="#" id="scroll" style="display: none;"><span></span></a> -->
-</footer>
-<!-- FOOTER START HERE -->
-<script type="text/javascript">
-   var clipboard = new Clipboard('.btn-copy', {
-    text: function() {
-        return document.querySelector('input[type=hidden]').value;
-    }
-});
-clipboard.on('success', function(e) {
-  alert("Copied!");
-  e.clearSelection();
-});
-$("#input-url").val(location.href);
-//safari
-if (navigator.vendor.indexOf("Apple")==0 && /\sSafari\//.test(navigator.userAgent)) {
-   $('.btn-copy').on('click', function() {
-var msg = window.prompt("Copy this link", location.href);
-
-});
-  }
-</script>
-<script>
-$(document).ready(function(){
-     $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        // scroll body to 0px on click
-        $('#back-to-top').click(function () {
-            $('#back-to-top').tooltip('hide');
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-
-        $('#back-to-top').tooltip('show');
-
-});
-</script>
-
-<!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/19678101.js"></script>
-<!-- End of HubSpot Embed Code -->
 </body>
 
-
-<!-- Mirrored from advandes.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Apr 2021 15:14:19 GMT -->
 </html>
+
+
